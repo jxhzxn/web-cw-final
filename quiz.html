@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BINGE</title>
+	<!-- <link rel="stylesheet" type="text/css" href="./css/common.css"> -->
+<link rel="stylesheet" type="text/css" href="./css/quiz.css">
+
+</head>
+<body>
+	<body id="a">
+        <script src="../JavaScript Files/ProductFormJS.js"> </script>
+        <!--header section-->
+        	<div id="header">
+			<div class="top-banner" >
+                <div class="logo-box">
+                    <a href="#about-section"><img class="logo" src="assets/logo.png"></a>
+                </div>
+                <div class="buttons">
+
+						<a href="./index.html"><button class="nav-btn">HOME</button></a>
+             
+                        <a href="./shop.html"><button class="nav-btn">SHOP</button></a>
+              
+						<a href="./start-quiz.html"><button class="nav-btn-active">QUIZ</button></a>
+						
+						<a href="./comment.html"><button class="nav-btn">COMMENTS</button></a>
+               
+						<button class="text-size">A+</button>
+                        <button class="text-size">A-</button>
+
+                </div>
+            
+        	</div>
+		</div>
+        <a name="top"></a>
+
+
+		<div class="quiz-box">
+		
+			<div id = "quiz" class="quiz-container">
+				<p id="timer" class="quiz-answer">Timer</p>
+				
+				<div id = "question" class = "quiz-question"></div>
+				
+				<label class = "quiz-answer" >
+						<input type = "radio" name = "answer" value ="1"/><span id = "answer1"></span>
+				</label>
+				<label class = "quiz-answer" >
+						<input type = "radio" name = "answer" value ="2"/><span id = "answer2"></span>
+				</label>
+				<label class = "quiz-answer" >
+						<input type = "radio" name = "answer" value ="3"/><span id = "answer3"></span>
+				</label>
+				<label class = "quiz-answer" >
+						<input type = "radio" name = "answer" value ="4"/><span id = "answer4"></span>
+				</label>
+				
+				<button id = "nextQ" class = "shop-btn" onclick="nextQuestion();">Next Question</button>
+			
+			</div>
+			
+			<div id = "result" class = "container result" style="display:none;">
+			</div>
+			
+
+				<script src="./js/quiz.js"></script>
+
+		</div>
+	
+		<div class="footer">
+			<div class="footer-left">
+				<div>
+				</div>
+	
+			</div>
+			<div class="footer-element">
+			   
+				<div class="footer-copyright">
+					<p class="footer-text">Page Developer - <a href="./about-hashini.html">Hashini</a></p>
+					
+				</div>
+			</div>
+			<div class="footer-right">
+			   
+			</div>
+		</div>
+        <script src=".../NavBarJS.js"> </script>
+
+</body>
+</html>

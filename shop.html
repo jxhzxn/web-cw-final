@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/shop.css">
+    <script src="./js/formValidate.js"></script>
+
+</head>
+<body>
+  
+
+
+
+    <div class="about-section" id="about">
+        <div class="top-banner" >
+                <div class="logo-box">
+                    <a href="#about-section"><img class="logo" src="assets/logo.png"></a>
+                </div>
+                <div class="buttons">
+
+                         <a href="./index.html"><button class="nav-btn">HOME</button></a>
+             
+                        <a href="./shop.html"><button class="nav-btn-active">SHOP</button></a>
+              
+                        <a href="./start-quiz.html"><button class="nav-btn">QUIZ</button></a>
+
+                        <a href="./comment.html"><button class="nav-btn">COMMENTS</button></a>
+               
+                        <button class="text-size">A+</button>
+                        <button class="text-size">A-</button>
+               
+                </div>
+            
+        </div>      
+    </div>
+
+
+
+    
+
+    <div class="sixth-container">
+        <div class="card-container">
+
+        
+
+            <!-- Start of Card -->
+            <div class="card">
+                <div class="img-box">
+                    <div class="buy-btn-box">
+                        <p class="buy-btn">American Teen</p>
+                    </div>
+                    <img class="com-img" src="./assets/images/american-teen.jpg" alt="pic">
+                </div>
+                <div class="item-desc">
+                    <p class="item-desc-title">Khalid <br/> € 50</p>
+                    <input class="num-of-cd" value=0 type="number" placeholder="Qty" id="prOne">
+                    <button class="purchase-btn">Qty</button>
+                </div>
+            </div>
+            <!-- End of Card -->
+    
+            <!-- Start of Card -->
+            <div class="card">
+                <div class="img-box">
+                    <div class="buy-btn-box">
+                        <p class="buy-btn">To Die For</p>
+                    </div>
+                    <img class="com-img" src="./assets/images/to-die-for.jpg" alt="pic">
+                </div>
+                <div class="item-desc">
+                    <p class="item-desc-title">Sam Smith <br/> € 50</p>
+                    <input class="num-of-cd" value=0 type="number" placeholder="Qty" id="prTwo">
+                    <button class="purchase-btn">Qty</button>
+                </div>
+            </div>
+            <!-- End of Card -->
+    
+                    <!-- Start of Card -->
+                    <div class="card">
+                        <div class="img-box">
+                            <div class="buy-btn-box">
+                                <p class="buy-btn">Consequence</p>
+                            </div>
+                            <img class="com-img" src="./assets/images/consequences.jpg" alt="pic">
+                        </div>
+                        <div class="item-desc">
+                            <p class="item-desc-title">Camila Cabello <br/> € 50</p>
+                    <input class="num-of-cd" value=0 type="number" placeholder="Qty" id="prThree">
+                            <button class="purchase-btn">Qty</button>
+                        </div>
+                    </div>
+                    <!-- End of Card -->
+    
+            <!-- Start of Card -->
+              <div class="card">
+                <div class="img-box">
+                    <div class="buy-btn-box">
+                        <p class="buy-btn">I Wish it was Me</p>
+                    </div>
+                    <img class="com-img" src="./assets/images/i-wish-it-was-me.jpg" alt="pic">
+                </div>
+                <div class="item-desc">
+                    <p class="item-desc-title">Etham <br/> € 50</p>
+                    <input class="num-of-cd" value=0 type="number" placeholder="Qty" id="prFour">
+                    <button class="purchase-btn">Qty</button>
+                </div>
+            </div>
+            <!-- End of Card -->
+            </div>
+    </div>
+
+
+
+    <div class="second-container">
+            <div class="cart-container">
+                <p class="rules-text">Cart</p>
+        
+                <div class="inside-cart">
+                    <div class="form-label">
+                        <p class="form-label-text">Total Qty : </p>
+                        <p class="form-label-text">Total Price : </p>
+                    </div>
+        
+                    <div class="form-box">
+                            <input type="number" name="totalQty" id="totalQty" class="cart-item" readonly>
+                            <input type="number" name="totalPrice" id="totalPrice" class="cart-item" readonly>
+                    </div>
+                </div>
+                <button type="submit" onclick="shopBill()" class="cartBtn" id="cartBtn">Update Cart</button>
+            
+            </div>
+    
+    
+    
+    
+    
+            <div class="form-container">
+                <p class="rules-text">Checkout</p>
+                <form>
+                    <input type="text" name="firstname" id="firstName" placeholder="First name" class="form-item">
+                    <br/>
+                    <input type="text" name="lastname" id="lastName" placeholder="Last name" class="form-item">
+                    <br/>
+                    <input type="email" name="email" id="email" placeholder="Email Address" class="form-item">
+                    <br/>
+                    <textarea rows="6" name="address" id="address" placeholder="Shipping Address" class="form-item"></textarea>
+                    <br/>
+                    
+                </form>
+                <button type="submit" onclick="test()" class="shop-btn" id="myBtn">Checkout</button>
+            </div>
+        </div>    
+        
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p id="text" class="invoice-text"></p>
+            </div>
+          
+        </div>
+
+  
+
+
+   
+
+
+
+
+
+    <div class="footer">
+        <div class="footer-left">
+            <div>
+            </div>
+
+        </div>
+        <div class="footer-element">
+           
+            <div class="footer-copyright">
+                <p class="footer-text">Page Developer - <a href="./jahzan-description.html">Jahzan</a> </p>
+                
+            </div>
+        </div>
+        <div class="footer-right">
+           
+        </div>
+    </div>
+
+    <!-- <script src="./js/shopModal.js"></script> -->
+
+    
+
+    <script>
+
+
+function test(){
+  
+}
+
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+    var qty = document.getElementById("totalQty").value;
+    var price = document.getElementById("totalPrice").value;
+    var name = document.getElementById("firstName").value;
+
+    var output = "Hi "+name+", You have ordered "+qty+" Music CDs. Your Total Price is : "+price;
+    
+    document.getElementById("text").innerHTML = output;
+  
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+    </script>
+
+
+
+
+    
+</body>
+</html>

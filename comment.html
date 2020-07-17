@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+    
+
+</head>
+<body>
+  
+
+
+
+    <div class="about-section" id="about">
+        <div class="top-banner" >
+                <div class="logo-box">
+                    <a href="#about-section"><img class="logo" src="assets/logo.png"></a>
+                </div>
+                <div class="buttons">
+                        <a href="./index.html"><button class="nav-btn">HOME</button></a>
+
+                        <a href="./shop.html"><button class="nav-btn">SHOP</button></a>
+              
+                        <a href="./start-quiz.html"><button class="nav-btn">QUIZ</button></a>
+               
+                        <a href="./comment.html"><button class="nav-btn-active">COMMENTS</button></a>
+
+                        <button class="text-size">A+</button>
+                        <button class="text-size">A-</button>
+               
+                </div>
+            
+        </div>
+
+    </div>
+
+
+
+    
+
+
+
+
+
+     <div class="second-container">
+        <div class="form-container">
+            <div class="reg-head-container">
+                <p id="reg-form" class="rules-text">Comment</p>
+            </div>
+            <div class="intro-form-container">
+                    <form id="form-id" name ="comments" onsubmit="return validateForm()" method="POST" class="form-elements-container" enctype="multipart/form-data">
+                         <input class="form-element" id="userFirstName" name="FirstName" type="text" placeholder="Your First Name...">
+                        <input class="form-element" id="userLastName" name="LastName" type="test" placeholder="Your Last Name...">
+                        <input class="form-element" id="userEmail" name="EmailAddress" type="email" placeholder="abcd@gamil.com">
+                        <input class="form-element" id="userFeedback" name="Feedback" type="text" placeholder="Type your feedback here..."><br><br>
+                        <p id="usercomments" class="nav-btn"> -- Rate Us --</p>
+                            <div class="rate-btns">
+                            <input type="radio" id="Rating" name="Rating1" value="Exellent">
+                            <label for="RatingRating1"> Exellent</label><br><br>
+                            <input type="radio" id="Rating2" name="Rating2" value="Good">
+                            <label for="Rating2"> Good</label><br><br>
+                            <input type="radio" id="Rating3" name="Rating3" value="Satisfied">
+                            <label for="Rating3"> Satisfied</label><br> <br>
+                            <input type="radio" id="Rating4" name="Rating4" value="Not-Satisfied">
+                            <label for="Rating4"> Not-Satisfied</label><br> <br><br></div>                           
+                             <button type="submit" class="reg-btn" id="regbtn">Submit</button></form>
+
+
+                            <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                    <span class="close">
+                                    <button class="modal-closeBtn" id="modal-closeBtn">&times;</button>
+                                    <p id="demo"></p> </span>
+                            </div>
+
+                            </div>
+    
+
+                    <script>
+                       var modal = document.getElementById("myModal");
+                       var span = document.getElementsByClassName("close")[0];
+                       regbtn.onclick = function() {
+                                modal.style.display = "block";}
+                        span.onclick = function() {
+                          modal.style.display = "none";
+                        }
+
+                        function validateForm() {
+                         var inputVal = document.getElementById("userFirstName").value;
+                          var inputVal1 = document.getElementById("userFeedback").value;
+                          if ((document.comments.Rating1.checked == true) && (document.comments.FirstName.value != "")) { 
+                            var out = ("Dear , "+ inputVal + " Thank You for your feedback. You have rated our site as Exellent and your comment was  " +inputVal1 + ".");
+                            document.getElementById("demo").innerHTML = out;
+                            return false;
+                          }
+                            if ((document.comments.Rating2.checked == true) && (document.comments.FirstName.value != "")) {
+                            var out = ("Dear , "+ inputVal + " Thank You for your feedback. You have rated our site as Good and your comment was  " +inputVal1 + ".");
+                            document.getElementById("demo").innerHTML = out;
+                            return false;
+                          }
+                            if ((document.comments.Rating3.checked == true) && (document.comments.FirstName.value != "")) {
+                            var out = ("Dear , "+ inputVal + " Thank You for your feedback. You have rated our site as Satisfied and your comment was  " +inputVal1 + ".");
+                            document.getElementById("demo").innerHTML = out;
+                            return false;
+                          }
+                            if ((document.comments.Rating4.checked == true) && (document.comments.FirstName.value != "")) {
+                            var out = ("Dear , "+ inputVal + " Thank You for your feedback. You have rated our site as Not - Satisfied and your comment was  " +inputVal1 + ".");
+                            document.getElementById("demo").innerHTML = out;
+                            return false;
+                          }
+                          else{ 
+                            return false;
+                          }
+                        }
+                    </script> 
+
+
+                                                  
+            </div>
+        </div>
+    </div>
+
+  
+
+
+   
+
+
+
+
+
+    <div class="footer">
+        <div class="footer-left">
+            <div>
+            </div>
+
+        </div>
+        <div class="footer-element">
+           
+            <div class="footer-copyright">
+                <p class="footer-text">Page Developer - <a href="./about-kaveesha.html">Kaveesha</a> | <a href="./about-hashini.html">Hashini</a></p>
+                
+            </div>
+        </div>
+        <div class="footer-right">
+           
+        </div>
+    </div>
+
+    
+
+
+
+
+<script src="./js/splash.js"></script>
+
+    
+</body>
+</html>
