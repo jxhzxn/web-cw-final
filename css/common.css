@@ -12,6 +12,7 @@ body{
     -o-background-size: cover;
     background-size: cover;
     width: 100%;
+    font-size: 20px;
 }
 
 a{

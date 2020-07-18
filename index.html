@@ -13,7 +13,7 @@
 
 
 </head>
-<body>
+<body id="a">
   
   
   
@@ -25,16 +25,16 @@
                     <a href="#about-section"><img class="logo" src="assets/logo.png"></a>
                 </div>
                 <div class="buttons">
-                    <a href="#committee"><button class="nav-btn">MEMBERS</button></a>
+                    <a href="#committee"><button class="nav-btn" id="nav">MEMBERS</button></a>
 
-                        <a href="./shop.html"><button class="nav-btn">SHOP</button></a>
+                        <a href="./shop.html"><button class="nav-btn" id="nav">SHOP</button></a>
               
-                        <a href="./start-quiz.html"><button class="nav-btn">QUIZ</button></a>
+                        <a href="./start-quiz.html"><button class="nav-btn" id="nav">QUIZ</button></a>
                
                         <a href="./comment.html"><button class="nav-btn">COMMENTS</button></a>
 
-                        <button class="text-size">A+</button>
-                        <button class="text-size">A-</button>
+                        <button onclick="increaseFontSize()" class="text-size">A+</button>
+                        <button onclick="decreaseFontSize()" class="text-size">A-</button>
                
                 </div>
             
@@ -43,7 +43,7 @@
         <div class="section-body-container">
             <div class="reg-head-container">
                 <p id="reg-form" class="rules-text">Welcome to the World of Music</p>
-                <a href="./shop.html"><button class="shop-btn">Shop Now!</button></a>
+                <a href="./shop.html"><button class="shop-btn" id="shop-btn">Shop Now!</button></a>
             </div>
         </div>
 
@@ -150,9 +150,10 @@
     </div> -->
 
     
-
-
+  
 
     <script src="./js/splash.js"></script>
+    <script src="./js/fontSize.js"></script>
+
 </body>
 </html>
